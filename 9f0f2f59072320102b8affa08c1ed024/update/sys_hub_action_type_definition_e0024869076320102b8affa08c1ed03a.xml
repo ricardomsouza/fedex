@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Status">5a5fef59072320102b8affa08c1ed0ef</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Track the status of a Shipment by Tracking Number.</description>
+        <ih_action>false</ih_action>
+        <internal_name>track_shipment</internal_name>
+        <label_cache>[{"name":"{{action.tracking_number}}","label":"action➛Tracking Number","type":"action","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].variable}}","label":"Lookup Shipment Statusstep➛➛variable","type":"step","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].status}}","label":"Lookup Shipment Statusstep➛➛status","type":"step","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].expect_date}}","label":"Lookup Shipment Statusstep➛➛expect_date","type":"step","ref":""}]</label_cache>
+        <master_snapshot>f13d7de907a720102b8affa08c1ed028</master_snapshot>
+        <name>Track Shipment</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:00:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0024869076320102b8affa08c1ed03a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Track Shipment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_e0024869076320102b8affa08c1ed03a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=e0024869076320102b8affa08c1ed03a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e0024869076320102b8affa08c1ed03a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>e0024869076320102b8affa08c1ed03a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:06:06</sys_created_on>
+        <sys_id>9b5348a9076320102b8affa08c1ed052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:06:06</sys_updated_on>
+        <value/>
+        <variable display_value="Expected Delivery Date">98e280a9076320102b8affa08c1ed0cb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0024869076320102b8affa08c1ed03a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>delivery_date</field>
+        <id>e0024869076320102b8affa08c1ed03a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:06:06</sys_created_on>
+        <sys_id>575348a9076320102b8affa08c1ed052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:06:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</table>
+        <value>{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].expect_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>e0024869076320102b8affa08c1ed03a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:06:06</sys_created_on>
+        <sys_id>1b5348a9076320102b8affa08c1ed052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:06:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</table>
+        <value>{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e0024869076320102b8affa08c1ed03a^sys_idNOT IN88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</action>
+        <cid>a3547a4f-61c1-45a6-9d1d-dccc5746038f</cid>
+        <error_handling_type/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Lookup Shipment Status</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>88e280a9076320102b8affa08c1ed0b2</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:37:12</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>88e280a9076320102b8affa08c1ed0b2</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>0d0304a9076320102b8affa08c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>88e280a9076320102b8affa08c1ed0b2</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>50e280a9076320102b8affa08c1ed0c2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:37:12</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var trackingNum = inputs.tracking_num;
+  var delDateTime = new GlideDateTime();
+  var outputStatus = 'Delivered';
+  var randResult = getRandomInt(1, 100);
+  
+  if (randResult &lt; 3) {
+     outputStatus = 'delivery_exception';
+     delDateTime.add(getRandomInt(1,2) * 86400000);
+} else if (randResult &lt; 50) {
+     outputStatus = 'delivered';
+     delDateTime.add(getRandomInt(0,1) * -86400000);
+} else if (randResult &lt; 90) {
+     outputStatus = 'in_transit';
+     delDateTime.add(getRandomInt(1,6) * 86400000);
+} else {
+     outputStatus = 'new';
+     delDateTime.add(getRandomInt(5,14) * 86400000);
+};
+   
+  
+  outputs.status = outputStatus;
+  outputs.expect_date = delDateTime;
+})(inputs, outputs);
+
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return parseInt(Math.floor(Math.random() * (max - min + 1)) + min);
+};
+
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>88e280a9076320102b8affa08c1ed0b2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>810304a9076320102b8affa08c1ed09b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>88e280a9076320102b8affa08c1ed0b2</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>cd0304a9076320102b8affa08c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>88e280a9076320102b8affa08c1ed0b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>c50304a9076320102b8affa08c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>88e280a9076320102b8affa08c1ed0b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>050304a9076320102b8affa08c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>88e280a9076320102b8affa08c1ed0b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>890304a9076320102b8affa08c1ed09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>88e280a9076320102b8affa08c1ed0b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>d8e280a9076320102b8affa08c1ed0c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tracking_num</field>
+        <id>88e280a9076320102b8affa08c1ed0b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>50e280a9076320102b8affa08c1ed0c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_88e280a9076320102b8affa08c1ed0b2</table>
+        <value>{{action.tracking_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_88e280a9076320102b8affa08c1ed0b2^id=88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=88e280a9076320102b8affa08c1ed0b2^sys_idNOT IN18e280a9076320102b8affa08c1ed0b9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_num</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup Shipment Status">88e280a9076320102b8affa08c1ed0b2</model>
+        <model_id>88e280a9076320102b8affa08c1ed0b2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_88e280a9076320102b8affa08c1ed0b2</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>18e280a9076320102b8affa08c1ed0b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=88e280a9076320102b8affa08c1ed0b2^sys_idNOT IN010304a9076320102b8affa08c1ed092,890304a9076320102b8affa08c1ed08b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=6a698087-b2fd-4142-b4bf-788f71d0ec91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>expect_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>expect_date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup Shipment Status">88e280a9076320102b8affa08c1ed0b2</model>
+        <model_id>88e280a9076320102b8affa08c1ed0b2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_88e280a9076320102b8affa08c1ed0b2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>010304a9076320102b8affa08c1ed092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=87e5bdcd-5ed8-41f5-a976-bfad0cea3bdf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup Shipment Status">88e280a9076320102b8affa08c1ed0b2</model>
+        <model_id>88e280a9076320102b8affa08c1ed0b2</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_88e280a9076320102b8affa08c1ed0b2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:35</sys_created_on>
+        <sys_id>890304a9076320102b8affa08c1ed08b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_88e280a9076320102b8affa08c1ed0b2"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e0024869076320102b8affa08c1ed03a^sys_idNOT IN0ce28469076320102b8affa08c1ed09e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=179125ff-920f-43a3-b301-626a6d224e15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tracking Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</model>
+        <model_id>e0024869076320102b8affa08c1ed03a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e0024869076320102b8affa08c1ed03a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:58</sys_created_on>
+        <sys_id>0ce28469076320102b8affa08c1ed09e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0ce28469076320102b8affa08c1ed09e"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e0024869076320102b8affa08c1ed03a^sys_idNOT IN54e280a9076320102b8affa08c1ed0c5,98e280a9076320102b8affa08c1ed0cb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=3af48448-4d97-4803-a5ae-857823588aa1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Current Status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</model>
+        <model_id>e0024869076320102b8affa08c1ed03a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>54e280a9076320102b8affa08c1ed0c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:06:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=54e280a9076320102b8affa08c1ed0c5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=54e280a9076320102b8affa08c1ed0c5"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=5dccc5ef-9c55-42aa-9332-d9657e3a5a2a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_date</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>Expected Delivery Date</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</model>
+        <model_id>e0024869076320102b8affa08c1ed03a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>98e280a9076320102b8affa08c1ed0cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98e280a9076320102b8affa08c1ed0cb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=98e280a9076320102b8affa08c1ed0cb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e0024869076320102b8affa08c1ed03a"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e0024869076320102b8affa08c1ed03a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e0024869076320102b8affa08c1ed03a^sys_idNOT IN4ce28469076320102b8affa08c1ed0a3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tracking_number</element>
+        <help/>
+        <hint/>
+        <label>Tracking Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e0024869076320102b8affa08c1ed03a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>4ce28469076320102b8affa08c1ed0a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tracking Number</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e0024869076320102b8affa08c1ed03a_tracking_number_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e0024869076320102b8affa08c1ed03a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a^sys_idNOT IN14e280a9076320102b8affa08c1ed0ca,9ce280a9076320102b8affa08c1ed0cf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Current Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:03:59</sys_created_on>
+        <sys_id>14e280a9076320102b8affa08c1ed0ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Current Status</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a_status_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:03:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>delivery_date</element>
+        <help/>
+        <hint/>
+        <label>Expected Delivery Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 19:04:00</sys_created_on>
+        <sys_id>9ce280a9076320102b8affa08c1ed0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expected Delivery Date</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a_delivery_date_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 19:04:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e0024869076320102b8affa08c1ed03a"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=e0024869076320102b8affa08c1ed03a^sys_idNOT IN263d7de907a720102b8affa08c1ed0df"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"263d7de907a720102b8affa08c1ed0df","name":"plan"}}</plan>
+        <snapshot>1e3d7de907a720102b8affa08c1ed091</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>263d7de907a720102b8affa08c1ed0df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:32</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Status">5a5fef59072320102b8affa08c1ed0ef</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Track the status of a Shipment by Tracking Number.</description>
+        <internal_name>track_shipment</internal_name>
+        <label_cache>[{"name":"{{action.tracking_number}}","label":"action➛Tracking Number","type":"action","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].variable}}","label":"Lookup Shipment Statusstep➛➛variable","type":"step","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].status}}","label":"Lookup Shipment Statusstep➛➛status","type":"step","ref":""},{"name":"{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].expect_date}}","label":"Lookup Shipment Statusstep➛➛expect_date","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Track Shipment</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Track Shipment">e0024869076320102b8affa08c1ed03a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f13d7de907a720102b8affa08c1ed028</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:29</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f13d7de907a720102b8affa08c1ed028"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f13d7de907a720102b8affa08c1ed028"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f13d7de907a720102b8affa08c1ed028</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>163d7de907a720102b8affa08c1ed090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <value/>
+        <variable display_value="Expected Delivery Date">1e3d7de907a720102b8affa08c1ed088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f13d7de907a720102b8affa08c1ed028"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>delivery_date</field>
+        <id>f13d7de907a720102b8affa08c1ed028</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>de3d7de907a720102b8affa08c1ed08f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</table>
+        <value>{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].expect_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>f13d7de907a720102b8affa08c1ed028</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>923d7de907a720102b8affa08c1ed090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</table>
+        <value>{{step[a3547a4f-61c1-45a6-9d1d-dccc5746038f].status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f13d7de907a720102b8affa08c1ed028^sys_idNOT IN0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">f13d7de907a720102b8affa08c1ed028</action>
+        <cid>a3547a4f-61c1-45a6-9d1d-dccc5746038f</cid>
+        <error_handling_type/>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Lookup Shipment Status</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>0a3d7de907a720102b8affa08c1ed032</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0a3d7de907a720102b8affa08c1ed032</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>0e3d7de907a720102b8affa08c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0a3d7de907a720102b8affa08c1ed032</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>4a3d7de907a720102b8affa08c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0a3d7de907a720102b8affa08c1ed032</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>823d7de907a720102b8affa08c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0a3d7de907a720102b8affa08c1ed032</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>ce3d7de907a720102b8affa08c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var trackingNum = inputs.tracking_num;
+  var delDateTime = new GlideDateTime();
+  var outputStatus = 'Delivered';
+  var randResult = getRandomInt(1, 100);
+  
+  if (randResult &lt; 3) {
+     outputStatus = 'delivery_exception';
+     delDateTime.add(getRandomInt(1,2) * 86400000);
+} else if (randResult &lt; 50) {
+     outputStatus = 'delivered';
+     delDateTime.add(getRandomInt(0,1) * -86400000);
+} else if (randResult &lt; 90) {
+     outputStatus = 'in_transit';
+     delDateTime.add(getRandomInt(1,6) * 86400000);
+} else {
+     outputStatus = 'new';
+     delDateTime.add(getRandomInt(5,14) * 86400000);
+};
+   
+  
+  outputs.status = outputStatus;
+  outputs.expect_date = delDateTime;
+})(inputs, outputs);
+
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return parseInt(Math.floor(Math.random() * (max - min + 1)) + min);
+};
+
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>0a3d7de907a720102b8affa08c1ed032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>8a3d7de907a720102b8affa08c1ed07d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>0a3d7de907a720102b8affa08c1ed032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>c23d7de907a720102b8affa08c1ed07d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>0a3d7de907a720102b8affa08c1ed032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>4e3d7de907a720102b8affa08c1ed07d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>0a3d7de907a720102b8affa08c1ed032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>023d7de907a720102b8affa08c1ed07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tracking_num</field>
+        <id>0a3d7de907a720102b8affa08c1ed032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>0e3d7de907a720102b8affa08c1ed07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0a3d7de907a720102b8affa08c1ed032</table>
+        <value>{{action.tracking_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_0a3d7de907a720102b8affa08c1ed032^id=0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=0a3d7de907a720102b8affa08c1ed032^sys_idNOT IN8e3d7de907a720102b8affa08c1ed035"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_num</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>tracking_num</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup Shipment Status">0a3d7de907a720102b8affa08c1ed032</model>
+        <model_id>0a3d7de907a720102b8affa08c1ed032</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0a3d7de907a720102b8affa08c1ed032</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>8e3d7de907a720102b8affa08c1ed035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=0a3d7de907a720102b8affa08c1ed032^sys_idNOT IN0e3d7de907a720102b8affa08c1ed074,c63d7de907a720102b8affa08c1ed06e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=6a698087-b2fd-4142-b4bf-788f71d0ec91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>expect_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>expect_date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Lookup Shipment Status">0a3d7de907a720102b8affa08c1ed032</model>
+        <model_id>0a3d7de907a720102b8affa08c1ed032</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_0a3d7de907a720102b8affa08c1ed032</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>0e3d7de907a720102b8affa08c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=87e5bdcd-5ed8-41f5-a976-bfad0cea3bdf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Lookup Shipment Status">0a3d7de907a720102b8affa08c1ed032</model>
+        <model_id>0a3d7de907a720102b8affa08c1ed032</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_0a3d7de907a720102b8affa08c1ed032</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>c63d7de907a720102b8affa08c1ed06e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_0a3d7de907a720102b8affa08c1ed032"/>
+    <sys_hub_action_input action="delete_multiple" query="model=f13d7de907a720102b8affa08c1ed028^sys_idNOT INb13d7de907a720102b8affa08c1ed02b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=179125ff-920f-43a3-b301-626a6d224e15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tracking Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">f13d7de907a720102b8affa08c1ed028</model>
+        <model_id>f13d7de907a720102b8affa08c1ed028</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f13d7de907a720102b8affa08c1ed028</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:29</sys_created_on>
+        <sys_id>b13d7de907a720102b8affa08c1ed02b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b13d7de907a720102b8affa08c1ed02b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f13d7de907a720102b8affa08c1ed028^sys_idNOT IN1e3d7de907a720102b8affa08c1ed088,863d7de907a720102b8affa08c1ed082"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date,uiTypeLabel=Date,uiUniqueId=5dccc5ef-9c55-42aa-9332-d9657e3a5a2a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_date</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">glide_date</internal_type>
+        <label>Expected Delivery Date</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Track Shipment">f13d7de907a720102b8affa08c1ed028</model>
+        <model_id>f13d7de907a720102b8affa08c1ed028</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>1e3d7de907a720102b8affa08c1ed088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1e3d7de907a720102b8affa08c1ed088"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1e3d7de907a720102b8affa08c1ed088"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=3af48448-4d97-4803-a5ae-857823588aa1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Current Status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">f13d7de907a720102b8affa08c1ed028</model>
+        <model_id>f13d7de907a720102b8affa08c1ed028</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>863d7de907a720102b8affa08c1ed082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=863d7de907a720102b8affa08c1ed082"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=863d7de907a720102b8affa08c1ed082"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f13d7de907a720102b8affa08c1ed028"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f13d7de907a720102b8affa08c1ed028"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f13d7de907a720102b8affa08c1ed028^sys_idNOT IN063d7de907a720102b8affa08c1ed030"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tracking_number</element>
+        <help/>
+        <hint/>
+        <label>Tracking Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f13d7de907a720102b8affa08c1ed028</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:30</sys_created_on>
+        <sys_id>063d7de907a720102b8affa08c1ed030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tracking Number</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f13d7de907a720102b8affa08c1ed028_tracking_number_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f13d7de907a720102b8affa08c1ed028"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028^sys_idNOT IN123d7de907a720102b8affa08c1ed08d,863d7de907a720102b8affa08c1ed087"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>delivery_date</element>
+        <help/>
+        <hint/>
+        <label>Expected Delivery Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>123d7de907a720102b8affa08c1ed08d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expected Delivery Date</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028_delivery_date_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Current Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 03:58:31</sys_created_on>
+        <sys_id>863d7de907a720102b8affa08c1ed087</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Current Status</sys_name>
+        <sys_package display_value="FedEx" source="x_361657_fedex">9f0f2f59072320102b8affa08c1ed024</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FedEx">9f0f2f59072320102b8affa08c1ed024</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028_status_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 03:58:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f13d7de907a720102b8affa08c1ed028"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>e0024869076320102b8affa08c1ed03a</sys_id>
+        <latest_snapshot>f13d7de907a720102b8affa08c1ed028</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_action_type_definition>
+</record_update>
